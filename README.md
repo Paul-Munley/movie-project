@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Paul Munley Movie Search Project Process
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+I decided to use React to create this app as it seemed most fitting considering the UI and state requirements of this project. It seemed that a SPA would work best for this. 
 
-## Available Scripts
+To be honest, I have never taken a CSV with a bunch of data and tried to put it on a front end. Becuase of this, I would say this was my biggest road block. My main assumption was to get all of the 86k rows of data to work, it would have to be added to a database (I could be off on this though). I am familar with Firebase so I decided to go that route. I wrestled around with figuring out how to get this to work but ended up doing so after a solid amount of time.
 
-In the project directory, you can run:
+#### Main takeaways in regards to transferring the CSV. ####
+1. There are a large variety of ways to convert CSVs into JSON files. I decided to go the route of downloading the csvtojson pagkage globally on my computer and doing it from the command line.
+2. At least in terms of Firebase but I think this may be the case with others; you need to make sure that all of your fields are filled with something in order for the data to be added into the Firebase DB. It won't let you have an empty string in any of your JSON values.
+3. How to work a little bit more with CSVs.
 
-### `npm start`
+#### Thinks that I could have added or improved upon with more time
+1. Fixing up the various keys/fields in the database as opposed to the field names that they had. That isn't too explanatory for someone who was happening to utalize the database.
+2. Creating an API to interact with the Database as opposed to just directly interacting with the database. I do know that it is not good to directly interact with a database as this is not safe in terms of data being hijacked. Because of this, this would be a good thing to add.
+3. The functionality of the adding and removing favorites. I was planning on doing that with local storage but know it also could have been done with cookies or user accounts.
+4. Input validation or more advanced handling of search queries. There could have been many things that could have been implemented in this regard. Having a dynamic search bar showing movies as the user is typing. If not that, showing results even if the user only types the first few letters of a movie title and presses search. Handling the error of a movie not being found. Etc.
+5. I could have also created a more modular design in terms of my code. I feel that it could have been a possibility to have the saving of the favorites be completed on a different component, Redux (if necessary), or somewhere else in the applicaiton. I guess this would also be dependent on the size of the application as well.
+6. Making the UI better. There could be some cool things to be added for the UI. Like some movie-like animations, images, a formal grid layout, a dynamic dropdown with a colleciton of the favorites, etc.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+All in all I feel that I did good considering the CSV to Front End is something that I haven't done before. Hopefully that is something that is considered. Other than that it was overall a blast and great learning experience. Thanks!
