@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./MovieSearch.css";
-import FavoritesList from "./FavoritesList";
 
 const MovieSearch = () => {
 	const [movieSearch, setMovieSearch] = useState();
