@@ -1,4 +1,4 @@
-# Paul Munley Movie Search Project Process
+# Paul Munley Movie Search Project Process 🍿
 
 I decided to use React to create this app as it seemed most fitting considering the UI and state requirements of this project. It seemed that a SPA would work best for this. 
 
