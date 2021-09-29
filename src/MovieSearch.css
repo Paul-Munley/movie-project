@@ -1,0 +1,87 @@
+.mainContainer {
+	display: flex;
+	height: calc(100vh - 120px);
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.resultsTable {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-bottom: 12px;
+	border-collapse: separate;
+}
+
+.searchContainer {
+	margin-top: 25px;
+	align-items: start;
+}
+
+.searchContainer input {
+	border-radius: 4px;
+	border: 1px solid #b6b9ba;
+	flex: 0 0 50%;
+	margin-bottom: 2px;
+}
+
+.searchBar {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	width: fit-content;
+	margin-bottom: 48px;
+}
+
+.searchBar h4 {
+	width: max-content;
+	font-size: 18px;
+}
+
+.searchBar input {
+	align-self: center;
+	justify-self: center;
+	height: 4px;
+}
+
+.searchResults {
+	margin-left: -12px;
+}
+
+td,
+th {
+	text-align: left;
+}
+
+.movieGroup {
+}
+
+.movieGroup__label {
+	margin-right: 20px;
+}
+
+.movieGroup__value {
+	padding-left: 20px;
+}
+
+button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 20px;
+	width: fit-content;
+	font-size: 10px;
+	background-color: brown;
+	color: white;
+	font-weight: 600;
+	border-radius: 4px;
+	border: none;
+	padding: 5px 10px;
+}
+
+.favoritesBtn {
+	margin-left: 12px;
+}
